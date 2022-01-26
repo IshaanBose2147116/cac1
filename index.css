@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(223, 242, 255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#login-form {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1em;
+    border-radius: 5px;
+    width: 30%;
+}
+
+#login-form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#login-form div label {
+    margin-bottom: 0.2em;
+}
+
+#login-form div input {
+    margin-bottom: 2em;
+}
+
+#login-form div .error-text {
+    font-size: 0.8em;
+    color:red;
+    margin-left: 0.2em;
+    display: none;
+}
+
+#feedback-form {   
+    display: none;
+    background-color: white;
+    width: 50%;
+    padding: 2em;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-fields label {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.form-fields label:not(:first-child) {
+    margin-top: 1em;
+}
+
+.form-fields input[type=text] {
+    width: 50%;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(70, 70, 70);
+    font-size: 1.15em;
+    padding: 0 0.3em;
+    margin-bottom: 0.2em;
+}
+
+.form-fields input[type=text]:focus {
+    outline: none;
+    border-bottom-color: rgb(0, 81, 255);
+}
+
+.form-fields .error-text {
+    color: red;
+    display: none;
+}
+
+.options label {
+    font-size: 1.25em;
+}
+
+.options input[type=checkbox]:not(:first-child) {
+    margin-left: 1em;
+}
+
+.form-fields textarea {
+    resize: none;
+    font-size: 1.15em;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 10em;
+}
+
+.form-actions {
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+.action-buttons {
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 0.3em 0.6em;
+    color: white;
+}
+
+.action-buttons:hover {
+    cursor: pointer;
+}
+
+.action-buttons:active {
+    color: rgb(137, 202, 255);
+}
+
+.form-actions #reset {
+    background-color: red;
+}
+
+.form-actions #reset:hover {
+    box-shadow: 0 0 2px 2px rgb(219, 0, 0);
+}
+
+#submit {
+    background-color: rgb(0, 211, 0);
+}
+
+#submit:hover {
+    box-shadow: 0 0 2px 2px rgb(0, 165, 0);
+}

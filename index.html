@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Campus Visit Feedback</title>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="container">
+            <form id="login-form" method="post" onsubmit="return false">
+                <h1>Login</h1>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="text" />
+                    <span id="login-email-error" class="error-text">ERROR</span>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" />
+                    <span id="login-password-error" class="error-text">ERROR</span>
+                </div>
+                <input id="submit" class="action-buttons" type="submit" name="login" value="Login" />
+            </form>
+            <form id="feedback-form" onsubmit="return false;">
+                <h1>Campus Visit Feedback</h1>
+                <div class="form-fields">
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" placeholder="Enter name" />
+                    <span id="name-error" class="error-text">ERROR</span>
+                    <label for="address">Address:</label>
+                    <input id="address" name="address" type="text" placeholder="Enter address" />
+                    <span id="address-error" class="error-text">ERROR</span>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="text" placeholder="Enter email" />
+                    <span id="email-error" class="error-text">ERROR</span>
+                    <label>Liked aspect about campus:</label>
+                    <div class="options">
+                        <input type="checkbox" id="liked-students" name="liked-students" value="students" />
+                        <label for="liked-students">Students</label>
+                        <input type="checkbox" id="liked-location" name="liked-location" value="location" />
+                        <label for="liked-location">Location</label>
+                        <input type="checkbox" id="liked-campus" name="liked-campus" value="campus" />
+                        <label for="liked-campus">Campus</label>
+                        <input type="checkbox" id="liked-atmosphere" name="liked-atmosphere" value="atmosphere" />
+                        <label for="liked-atmosphere">Atmosphere</label>
+                        <input type="checkbox" id="liked-dorms" name="liked-dorms" value="dorms" />
+                        <label for="liked-dorms">Dorm Rooms</label>
+                        <input type="checkbox" id="liked-sports" name="liked-sports" value="sports" />
+                        <label for="liked-sports">Sports</label>
+                    </div>
+                    <label>How did you become interested in this university?</label>
+                    <div class="options">
+                        <input type="radio" id="interest-friends" name="interest" value="friends" checked="checked" />
+                        <label for="interest-friends">Friends</label>
+                        <input type="radio" id="interest-tv" name="interest" value="tv" />
+                        <label for="interest-tv">Television</label>
+                        <input type="radio" id="interest-internet" name="interest" value="internet" />
+                        <label for="interest-internet">Internet</label>
+                        <input type="radio" id="interest-other" name="interest" value="other" />
+                        <label for="interest-other">Other</label> 
+                    </div>
+                    <label>Additional comments</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button id="reset" class="action-buttons">Reset Fields</button>
+                    <input id="submit" class="action-buttons" type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
