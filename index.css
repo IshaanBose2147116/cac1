@@ -28,6 +28,15 @@ html, body {
     padding: 1em;
     border-radius: 5px;
     width: 30%;
+    transition: opacity 1s ease;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1 !important;
 }
 
 #login-form div {
@@ -39,10 +48,7 @@ html, body {
 
 #login-form div label {
     margin-bottom: 0.2em;
-}
-
-#login-form div input {
-    margin-bottom: 2em;
+    margin-top: 0.5em;
 }
 
 #login-form div .error-text {
@@ -50,6 +56,10 @@ html, body {
     color:red;
     margin-left: 0.2em;
     display: none;
+}
+
+#login-form #submit {
+    margin-top: 1.5em;
 }
 
 #feedback-form {   
@@ -62,6 +72,8 @@ html, body {
     margin-bottom: 2em;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 .form-fields {

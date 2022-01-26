@@ -7,16 +7,16 @@
     </head>
     <body>
         <div class="container">
-            <form id="login-form" method="post" onsubmit="return false">
+            <form id="login-form" method="post">
                 <h1>Login</h1>
                 <div>
                     <label for="email">Email</label>
-                    <input id="email" type="text" />
+                    <input id="login-email" type="text" />
                     <span id="login-email-error" class="error-text">ERROR</span>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input id="password" type="password" />
+                    <input id="login-password" type="password" />
                     <span id="login-password-error" class="error-text">ERROR</span>
                 </div>
                 <input id="submit" class="action-buttons" type="submit" name="login" value="Login" />
@@ -68,5 +68,7 @@
                 </div>
             </form>
         </div>
+        <script src="common.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
