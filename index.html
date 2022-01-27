@@ -3,11 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Campus Visit Feedback</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="index.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div class="container">
-            <form id="login-form" method="post">
+            <form id="login-form">
                 <h1>Login</h1>
                 <div>
                     <label for="email">Email</label>
@@ -21,7 +24,7 @@
                 </div>
                 <input id="submit" class="action-buttons" type="submit" name="login" value="Login" />
             </form>
-            <form id="feedback-form" onsubmit="return false;">
+            <form id="feedback-form">
                 <h1>Campus Visit Feedback</h1>
                 <div class="form-fields">
                     <label for="name">Name:</label>
@@ -67,6 +70,27 @@
                     <input id="submit" class="action-buttons" type="submit" value="Submit" />
                 </div>
             </form>
+            <div id="show-info" class="show-info">
+                <h1>Your response has been recorded!</h1>
+                <div>
+                    Name: <span id="recorded-name">Ishaan Bose</span>
+                </div>
+                <div>
+                    Address: <span id="recorded-address">Some address</span>
+                </div>
+                <div>
+                    Email: <span id="recorded-email">a.b@c.christuniversity.in</span>
+                </div>
+                <div>
+                    Liked aspect(s): <span id="recorded-likes">A, B, C</span>
+                </div>
+                <div>
+                    Source of interest: <span id="recorded-interest">Internet</span>
+                </div>
+                <div>
+                    Additional comments: <span id="recorded-comments">Comments</span>
+                </div>
+            </div>
         </div>
         <script src="common.js"></script>
         <script src="index.js"></script>
